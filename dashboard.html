@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSP Crime Intelligence AI - Dashboard</title>
 
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <h2>KSP AI</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-robot"></i>
+            AI Chat
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Crime Analytics
+        </li>
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+            Hotspots
+        </li>
+
+        <li>
+            <i class="fa-solid fa-project-diagram"></i>
+            Criminal Network
+        </li>
+
+        <li>
+            <i class="fa-solid fa-folder-open"></i>
+            FIR Search
+        </li>
+
+        <li>
+            <i class="fa-solid fa-file-lines"></i>
+            Reports
+        </li>
+
+        <li>
+            <i class="fa-solid fa-users"></i>
+            Users
+        </li>
+
+        <li>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Audit Logs
+        </li>
+
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </li>
+
+        <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div>
+
+<h2>Crime Intelligence Dashboard</h2>
+
+<p>Welcome back, Inspector</p>
+
+</div>
+
+<div class="profile">
+
+<i class="fa-solid fa-bell"></i>
+
+<img src="assets/officer.png" width="45">
+
+</div>
+
+</div>
+
+<!-- Welcome Banner -->
+
+<div class="banner">
+
+<div>
+
+<h1>Good Evening 👋</h1>
+
+<p>AI-powered insights are ready for today's investigations.</p>
+
+</div>
+
+<button>
+
+<i class="fa-solid fa-robot"></i>
+
+Ask AI
+
+</button>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-file-circle-plus"></i>
+
+<h2>12,584</h2>
+
+<p>Total Crimes</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-folder-open"></i>
+
+<h2>2,146</h2>
+
+<p>Active Cases</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>10,438</h2>
+
+<p>Solved Cases</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-day"></i>
+
+<h2>87</h2>
+
+<p>Today's FIRs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h2>14</h2>
+
+<p>Hotspots</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-secret"></i>
+
+<h2>96</h2>
+
+<p>Repeat Offenders</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+<h2>312</h2>
+
+<p>Pending Cases</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2>23</h2>
+
+<p>AI Alerts</p>
+
+</div>
+
+</div>
+
+<!-- Charts Section -->
+
+<div class="charts">
+
+<div class="chart-box">
+
+<h3>Crime Trend</h3>
+
+<canvas id="crimeChart"></canvas>
+
+</div>
+
+<div class="chart-box">
+
+<h3>Crime Categories</h3>
+
+<canvas id="pieChart"></canvas>
+
+</div>
+
+</div>
